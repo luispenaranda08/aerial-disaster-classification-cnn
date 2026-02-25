@@ -1,0 +1,24 @@
+title: Aerial Disaster Classification CNN
+author: Luis David Peñaranda
+
+logo: logo.png
+
+repository:
+  url: https://github.com/luispenaranda08/aerial-disaster-classification-cnn
+  path_to_book: docs
+  branch: main
+
+html:
+  use_issues_button: false
+  use_repository_button: true
+  extra_files:
+    - _static/images/Image_Biography_LuisPeñaranda.png
+
+execute:
+  execute_notebooks: "off"
+
+sphinx:
+  config:
+    html_theme: sphinx_book_theme
+    html_theme_options:
+      default_mode: dark
