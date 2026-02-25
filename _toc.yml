@@ -1,4 +1,4 @@
 format: jb-book
 root: intro
 chapters:
-  - file: Notebooks/disaster_eda
+  - file: notebooks/disaster_eda
