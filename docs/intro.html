@@ -8,7 +8,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <title>Análisis Exploratorio de Datos &#8212; Project Dropout and Academic Success</title>
+    <title>Clasificacion de Desastres Naturales mediante Imagenes &#8212; Aerial Disaster Classification CNN</title>
   
   
   
@@ -86,7 +86,7 @@
     <script src="_static/vendor/fontawesome/6.5.2/js/all.min.js?v=4e4fcec4"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="ENTREGA DEL MINIPROYECTO #1" href="minproyect_1.html" />
+    <link rel="next" title="Analisis Exploratorio de Datos" href="Notebooks/disaster_eda.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -125,8 +125,8 @@
          class="form-control"
          name="q"
          id="search-input"
-         placeholder="Search this book..."
-         aria-label="Search this book..."
+         placeholder="Search..."
+         aria-label="Search..."
          autocomplete="off"
          autocorrect="off"
          autocapitalize="off"
@@ -180,8 +180,8 @@
       
     
     
-    <img src="_static/logo.png" class="logo__image only-light" alt="Project Dropout and Academic Success - Home"/>
-    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Project Dropout and Academic Success - Home"/>`);</script>
+    <img src="_static/logo.png" class="logo__image only-light" alt="Aerial Disaster Classification CNN - Home"/>
+    <script>document.write(`<img src="_static/logo.png" class="logo__image only-dark" alt="Aerial Disaster Classification CNN - Home"/>`);</script>
   
   
 </a></div>
@@ -198,16 +198,8 @@
  </script></div>
         <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item navbar-nav active">
-        
-        <ul class="nav bd-sidenav bd-sidenav__home-link">
-            <li class="toctree-l1 current active">
-                <a class="reference internal" href="#">
-                    Análisis Exploratorio de Datos
-                </a>
-            </li>
-        </ul>
         <ul class="nav bd-sidenav">
-<li class="toctree-l1"><a class="reference internal" href="minproyect_1.html">ENTREGA DEL MINIPROYECTO #1</a></li>
+<li class="toctree-l1"><a class="reference internal" href="Notebooks/disaster_eda.html">Analisis Exploratorio de Datos</a></li>
 </ul>
 
     </div>
@@ -249,53 +241,6 @@
         <div class="header-article-item">
 
 <div class="article-header-buttons">
-
-
-
-
-
-<div class="dropdown dropdown-source-buttons">
-  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
-    <i class="fab fa-github"></i>
-  </button>
-  <ul class="dropdown-menu">
-      
-      
-      
-      <li><a href="https://github.com/executablebooks/jupyter-book" target="_blank"
-   class="btn btn-sm btn-source-repository-button dropdown-item"
-   title="Source repository"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fab fa-github"></i>
-  </span>
-<span class="btn__text-container">Repository</span>
-</a>
-</li>
-      
-      
-      
-      
-      <li><a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2Fintro.html&body=Your%20issue%20content%20here." target="_blank"
-   class="btn btn-sm btn-source-issues-button dropdown-item"
-   title="Open an issue"
-   data-bs-placement="left" data-bs-toggle="tooltip"
->
-  
-
-<span class="btn__icon-container">
-  <i class="fas fa-lightbulb"></i>
-  </span>
-<span class="btn__text-container">Open issue</span>
-</a>
-</li>
-      
-  </ul>
-</div>
-
 
 
 
@@ -393,7 +338,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Análisis Exploratorio de Datos</h1>
+    <h1>Clasificacion de Desastres Naturales mediante Imagenes</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -404,6 +349,7 @@ document.write(`
             <nav aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-del-proyecto">Contenido del proyecto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 </ul>
             </nav>
@@ -416,24 +362,48 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="analisis-exploratorio-de-datos">
-<h1>Análisis Exploratorio de Datos<a class="headerlink" href="#analisis-exploratorio-de-datos" title="Link to this heading">#</a></h1>
-<p>Bienvenido al proyecto final de la materia Machine Learning 2025. En este libro encontrarás un recorrido detallado por el proceso de análisis exploratorio de datos (EDA) aplicado a un dataset de salud.</p>
+  <section class="tex2jax_ignore mathjax_ignore" id="clasificacion-de-desastres-naturales-mediante-imagenes">
+<h1>Clasificacion de Desastres Naturales mediante Imagenes<a class="headerlink" href="#clasificacion-de-desastres-naturales-mediante-imagenes" title="Link to this heading">#</a></h1>
+<div style="display: flex; align-items: flex-start; gap: 30px; margin-bottom: 30px;">
+<p><img src="_static/images/Image_Biography_LuisPeñaranda.png" 
+     style="width: 450px; height: 200px; border-radius: 12px; 
+            object-fit: cover; object-position: 50% 0%;
+            flex-shrink: 0; 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.15);"></p>
+<div>
+<p><strong>Luis David Peñaranda</strong><br />
+Estudiante de Ciencia de Datos<br />
+Curso: Deep Learning — 2026</p>
+<p>Bienvenido a este proyecto de clasificacion de imagenes de desastres naturales
+mediante redes neuronales convolucionales (CNN). El proyecto analiza imagenes
+reales de ciclones, terremotos, inundaciones e incendios forestales, con
+aplicacion directa en sistemas de respuesta humanitaria y evaluacion de riesgos
+en el contexto colombiano.</p>
+</div>
+</div>
 <section id="contenido-del-proyecto">
 <h2>Contenido del proyecto<a class="headerlink" href="#contenido-del-proyecto" title="Link to this heading">#</a></h2>
 <ul class="simple">
-<li><p>Motivación</p></li>
-<li><p>Importación de datos</p></li>
-<li><p>Limpieza y preprocesamiento</p></li>
-<li><p>Visualización de variables</p></li>
-<li><p>Modelado básico</p></li>
-<li><p>Conclusiones y próximos pasos</p></li>
+<li><p>Motivacion y contexto colombiano</p></li>
+<li><p>Analisis Exploratorio de Datos (EDA)</p></li>
+<li><p>Modelo propuesto (Transfer Learning)</p></li>
+</ul>
+</section>
+<section id="dataset">
+<h2>Dataset<a class="headerlink" href="#dataset" title="Link to this heading">#</a></h2>
+<p><strong>Cyclone Wildfire Flood Earthquake Dataset</strong> — Kaggle<br />
+<a class="reference external" href="https://www.kaggle.com/datasets/mikolajbabula/disaster-images-dataset-cnn-model">Acceder al dataset</a></p>
+<ul class="simple">
+<li><p>2,400 imagenes reales</p></li>
+<li><p>4 clases: cyclone, earthquake, flood, wildfire</p></li>
+<li><p>Train (1,600) / Validation (400) / Test (400)</p></li>
 </ul>
 </section>
 <section id="objetivo">
 <h2>Objetivo<a class="headerlink" href="#objetivo" title="Link to this heading">#</a></h2>
-<p>El objetivo de este proyecto es aplicar técnicas de EDA y modelado predictivo con enfoque en la regresión logística, validando los supuestos y analizando la calidad del modelo en un entorno realista.</p>
-<p><strong>¡Explora el contenido en el menú de la izquierda y disfruta del viaje por los datos!</strong></p>
+<p>Desarrollar un modelo de clasificacion automatica de imagenes de desastres
+naturales con aplicacion en gestion de emergencias, seguros catastroficos
+y financiamiento del riesgo climatico en Colombia.</p>
 </section>
 <div class="toctree-wrapper compound">
 </div>
@@ -470,11 +440,11 @@ document.write(`
                   
 <div class="prev-next-area">
     <a class="right-next"
-       href="minproyect_1.html"
+       href="Notebooks/disaster_eda.html"
        title="next page">
       <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">ENTREGA DEL MINIPROYECTO #1</p>
+        <p class="prev-next-title">Analisis Exploratorio de Datos</p>
       </div>
       <i class="fa-solid fa-angle-right"></i>
     </a>
@@ -495,6 +465,7 @@ document.write(`
   <nav class="bd-toc-nav page-toc">
     <ul class="visible nav section-nav flex-column">
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#contenido-del-proyecto">Contenido del proyecto</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#dataset">Dataset</a></li>
 <li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#objetivo">Objetivo</a></li>
 </ul>
   </nav></div>
@@ -510,7 +481,7 @@ document.write(`
   <div class="footer-item">
     
 <p class="component-author">
-By Johan Díaz, Héctor Sanjuan, Miguel Lugo, Luis D. Peñaranda
+By Luis David Peñaranda
 </p>
 
   </div>
