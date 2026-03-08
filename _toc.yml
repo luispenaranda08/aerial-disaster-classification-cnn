@@ -1,4 +1,5 @@
 format: jb-book
 root: intro
 chapters:
-  - file: notebooks/disaster_eda
+  - file: Notebooks/disaster_eda
+  - file: Notebooks/literature_review
